@@ -6,15 +6,21 @@ import java.util.Scanner;
 public class Sala {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		
 		int opcion;
 		int filas = 10, columnas = 10;
 		int[][] sala = new int[filas][columnas];
 		int fila = 0, columna = 0;
 		Scanner teclado = new Scanner(System.in);
 		inicilizarMatriz(sala, filas, columnas);
+		
+		
+		
+		
 
 		do {
+			
 			System.out.println("1. Mostrar la sala");
 			System.out.println("2. Comprar una entrada");
 			System.out.println("3. Devolver la entrada comprada");
@@ -43,7 +49,8 @@ public class Sala {
 	}
 
 	private static void devolverEntrada(int[][] sala, int fila, int columna, Scanner teclado) {
-		// TODO Auto-generated method stub
+		
+		
 		try {
 			System.out.println("introduzca fila: ");
 			fila = teclado.nextInt();
@@ -65,7 +72,9 @@ public class Sala {
 	}
 
 	private static void comprarEntradas(int[][] sala, int fila, int columna, Scanner teclado) {
-		// TODO Auto-generated method stub
+		
+		
+		
 		try {
 			System.out.println("introduzca fila: ");
 			fila = teclado.nextInt();
@@ -87,7 +96,10 @@ public class Sala {
 	}
 
 	private static void imprimirMatriz(int[][] sala, int filas, int columnas) {
-		// TODO Auto-generated method stub
+		
+		
+		
+		
         for(int f=0; f<filas; f++) {
         	for(int c=0; c<columnas; c++) {
         		System.out.print(sala[f][c] + " ");
@@ -98,7 +110,9 @@ public class Sala {
 	}
 
 	private static void inicilizarMatriz(int[][] sala, int filas, int columnas) {
-		// TODO Auto-generated method stub
+		
+		
+		
 		for (int f = 0; f < filas; f++) {
 			for (int c = 0; c < columnas; c++) {
 				if (c == 4 || c == 5)
